@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	int firstNumber = 0;
+	int secondNumber = 0;
+	int decision = 0;
+	cout << "Введите любые два числа, что-бы вычислить их среднее арифметическое. \n";
+	cin >> firstNumber;
+	cin >> secondNumber;
+	decision = (firstNumber + secondNumber) / 2;
+	cout << decision;
+	cout << "\n";
+
+	cout << "Введите желаемое количество гривень, которое переведтся в доллар, рубль и евро. \n";
+	float gr;
+	float dollar;
+	float rub;
+	float evr;
+
+	cin >> gr;
+	cout << "\n";
+	dollar = gr * 0.037;
+	rub = gr * 2.06;
+	evr = gr * 0.035;
+
+	cout << dollar;
+	cout << "\n";
+	cout << rub;
+	cout << "\n";
+	cout << evr;
+	cout << "\n";
+
+
+	cout << "to be or not to be \n";
+	cout << "Shakespeare \n";
+
+	cout << "Введите число, что-бы возвести его в квадрат. \n";
+	int kvadrat = 0;
+	cin >> kvadrat;
+	kvadrat = kvadrat * kvadrat;
+	cout << kvadrat;
+	cout << "\n";
+
+	cout << "Введите три числа, что-бы узнать их сумму и произведение этих чисел. \n";
+	int aa = 0;
+	int aaa = 0;
+	int aaaa = 0;
+	cin >> aa;
+	cin >> aaa;
+	cin >> aaaa;
+	int aaaaa = aa + aaa + aaaa;
+	int aaaaaa = aa * aaa * aaaa;
+	cout << aaaaa;
+	cout << "\n";
+	cout << aaaaaa;
+	cout << "\n";
+
+	cout << "Нажмите 0, что-бы выйти. \n";
+	int  returning = 1;
+	if (returning == 0) {
+		return;
+	};
+};
